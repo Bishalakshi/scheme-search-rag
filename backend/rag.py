@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = genai.GenerativeModel("gemini-2.0-flash")
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 with open("schemes.json", "r", encoding="utf-8") as f:
     SCHEMES = json.load(f)
