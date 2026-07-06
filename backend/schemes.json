@@ -1,0 +1,252 @@
+[
+  {
+    "id": "pm-kisan",
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "category": "Agriculture",
+    "description": "Direct income support of Rs 6000 per year to small and marginal farmer families across India, paid in three installments of Rs 2000 every four months directly to the bank account.",
+    "eligibility": "Small and marginal farmers with cultivable land up to 2 hectares. Must be an Indian citizen. Excludes institutional land holders, farmer families holding constitutional posts, serving or retired government employees, income tax payers.",
+    "benefits": "Rs 6000 per year in three equal installments of Rs 2000 directly to bank account via DBT.",
+    "how_to_apply": "Visit nearest Common Service Centre (CSC) or pmkisan.gov.in. Submit Aadhaar, bank passbook, and land records.",
+    "tags": ["farmer", "agriculture", "income support", "rural", "land"]
+  },
+  {
+    "id": "ayushman-bharat",
+    "name": "Ayushman Bharat PM-JAY",
+    "category": "Health",
+    "description": "World's largest health insurance scheme providing health coverage of Rs 5 lakh per family per year for secondary and tertiary care hospitalization. Covers over 10 crore poor and vulnerable families.",
+    "eligibility": "Families listed in SECC 2011 database. Deprived rural families and occupational categories of urban workers. No restriction on family size, age, or gender.",
+    "benefits": "Health coverage of Rs 5 lakh per family per year. Cashless treatment at empanelled government and private hospitals. Pre and post hospitalization expenses covered.",
+    "how_to_apply": "Check eligibility at pmjay.gov.in or call helpline 14555. Visit nearest empanelled hospital with Aadhaar for cashless treatment.",
+    "tags": ["health", "insurance", "hospital", "medical", "poor", "BPL"]
+  },
+  {
+    "id": "pm-awas-yojana-gramin",
+    "name": "PM Awas Yojana Gramin (PMAY-G)",
+    "category": "Housing",
+    "description": "Provides financial assistance to rural households living in kutcha or dilapidated houses to construct a pucca house with basic amenities.",
+    "eligibility": "Homeless households, households living in 0 or 1 room kutcha wall or kutcha roof houses as per SECC 2011. Must be in rural area. SC/ST, minorities, and women-headed households get priority.",
+    "benefits": "Rs 1.20 lakh in plain areas and Rs 1.30 lakh in hilly or difficult areas for house construction. Linked with MGNREGS for 90-95 person days of unskilled labour.",
+    "how_to_apply": "Apply through Gram Panchayat or Block Development Office. Beneficiaries selected from SECC 2011 data.",
+    "tags": ["housing", "rural", "construction", "BPL", "SC", "ST", "women"]
+  },
+  {
+    "id": "pm-awas-yojana-urban",
+    "name": "PM Awas Yojana Urban (PMAY-U)",
+    "category": "Housing",
+    "description": "Provides affordable housing to urban poor including slum dwellers. Offers interest subsidy on home loans under Credit Linked Subsidy Scheme (CLSS).",
+    "eligibility": "EWS (annual income up to Rs 3 lakh), LIG (Rs 3-6 lakh), MIG-I (Rs 6-12 lakh), MIG-II (Rs 12-18 lakh). Must not own a pucca house anywhere in India. Women ownership mandatory for EWS and LIG.",
+    "benefits": "Interest subsidy of 6.5% for EWS/LIG, 4% for MIG-I, 3% for MIG-II on home loans. In-situ slum redevelopment with Rs 1 lakh per beneficiary.",
+    "how_to_apply": "Apply at pmaymis.gov.in or through bank/housing finance company. Submit income proof, Aadhaar, and bank details.",
+    "tags": ["housing", "urban", "home loan", "subsidy", "slum", "EWS", "LIG"]
+  },
+  {
+    "id": "mudra-yojana",
+    "name": "PM Mudra Yojana (PMMY)",
+    "category": "Business & Entrepreneurship",
+    "description": "Provides micro loans to non-corporate, non-farm small and micro enterprises for income generating activities. Covers three loan categories: Shishu, Kishor, and Tarun.",
+    "eligibility": "Non-farm income generating micro and small enterprises, individual proprietors, partnership firms. No collateral required. Any Indian citizen with a viable business plan.",
+    "benefits": "Shishu: loans up to Rs 50,000. Kishor: Rs 50,001 to Rs 5 lakh. Tarun: Rs 5 lakh to Rs 10 lakh. No processing fee for Shishu loans.",
+    "how_to_apply": "Apply at any public sector bank, private bank, RRB, MFI, or NBFC. Visit mudra.org.in. Submit business plan, identity proof, and address proof.",
+    "tags": ["business", "loan", "entrepreneur", "startup", "self-employment", "micro enterprise"]
+  },
+  {
+    "id": "sukanya-samriddhi",
+    "name": "Sukanya Samriddhi Yojana (SSY)",
+    "category": "Girl Child & Women",
+    "description": "Small deposit savings scheme for girl child providing attractive interest rate and income tax benefits. Encourages parents to build a fund for girl child's education and marriage.",
+    "eligibility": "Account can be opened for a girl child below 10 years of age. Parents or legal guardian can open the account. Maximum two accounts per family (exception for twins or triplets).",
+    "benefits": "Current interest rate 8.2% per annum (revised quarterly). Deposits qualify for tax deduction under Section 80C. Maturity amount fully tax exempt. Partial withdrawal allowed at age 18 for education.",
+    "how_to_apply": "Open account at any post office or authorized bank with girl child's birth certificate, parent's Aadhaar and PAN. Minimum deposit Rs 250, maximum Rs 1.5 lakh per year.",
+    "tags": ["girl child", "savings", "education", "marriage", "tax benefit", "women", "daughter"]
+  },
+  {
+    "id": "pm-scholarship",
+    "name": "Prime Minister's Scholarship Scheme (PMSS)",
+    "category": "Education",
+    "description": "Scholarship for wards and widows of ex-servicemen and ex-coast guard personnel for professional degree courses. Encourages technical and post-graduate education.",
+    "eligibility": "Wards and widows of ex-servicemen or ex-coast guard personnel. Minimum 60% marks in qualifying exam. For professional degree courses including BE, MBBS, BDS, BBA, BCA, B Pharma, MBA, MCA.",
+    "benefits": "Rs 2500 per month for boys, Rs 3000 per month for girls for first year. Renewable for subsequent years on maintaining minimum 50% marks.",
+    "how_to_apply": "Apply online at ksb.gov.in. Submit service certificate of ex-serviceman, marksheets, bank account details, and Aadhaar.",
+    "tags": ["scholarship", "education", "defence", "ex-serviceman", "professional degree", "student"]
+  },
+  {
+    "id": "nsp-central-scholarships",
+    "name": "National Scholarship Portal (NSP) — Central Schemes",
+    "category": "Education",
+    "description": "Single platform for multiple central government scholarships for pre-matric, post-matric, and merit-cum-means students from minority communities, SC, ST, OBC, and disabled students.",
+    "eligibility": "Students from Class 1 onwards up to PhD. Eligibility varies by scheme: SC/ST/OBC/Minority community students, income limits apply (family income usually below Rs 2.5 lakh to Rs 6 lakh depending on scheme).",
+    "benefits": "Scholarships ranging from Rs 1000 to Rs 20,000 per year depending on level of study and category. Directly credited to student's bank account.",
+    "how_to_apply": "Register at scholarships.gov.in. Choose applicable scheme, submit income certificate, caste certificate, marksheets, and bank details.",
+    "tags": ["scholarship", "education", "SC", "ST", "OBC", "minority", "student", "school", "college"]
+  },
+  {
+    "id": "ujjwala-yojana",
+    "name": "PM Ujjwala Yojana (PMUY)",
+    "category": "Women & Rural",
+    "description": "Provides free LPG connections to women from Below Poverty Line households to replace unclean cooking fuels. Protects health of rural women and children from indoor air pollution.",
+    "eligibility": "Women above 18 years from BPL households. Must not have an existing LPG connection in the household. Priority to SC/ST, PMAY beneficiaries, AAY, forest dwellers, most backward classes.",
+    "benefits": "Free LPG connection with first refill and stove free of cost. EMI facility for stove and first refill for those who cannot afford upfront.",
+    "how_to_apply": "Apply at nearest LPG distributor with BPL ration card, Aadhaar, and bank account details. Also available online at pmuy.gov.in.",
+    "tags": ["LPG", "gas", "women", "BPL", "cooking", "rural", "below poverty line"]
+  },
+  {
+    "id": "e-shram",
+    "name": "e-SHRAM Portal — Unorganised Workers Registration",
+    "category": "Labour & Employment",
+    "description": "National database of unorganised workers providing a Universal Account Number. Registered workers get accident insurance and priority access to social security schemes.",
+    "eligibility": "Unorganised workers aged 16-59 years including construction workers, migrant workers, street vendors, domestic workers, agricultural labourers, gig and platform workers. Must not be an EPFO or ESIC member.",
+    "benefits": "Free accidental insurance of Rs 2 lakh under PMSBY. UAN card for portability of benefits. Priority in government welfare schemes. Rs 1 lakh insurance for partial disability.",
+    "how_to_apply": "Self-register at eshram.gov.in using Aadhaar and mobile number. Also register at CSC centres. No fee required.",
+    "tags": ["worker", "labour", "unorganised", "migrant", "construction", "domestic worker", "insurance", "gig worker"]
+  },
+  {
+    "id": "jan-dhan",
+    "name": "PM Jan Dhan Yojana (PMJDY)",
+    "category": "Finance & Banking",
+    "description": "National financial inclusion mission ensuring access to financial services including banking, remittance, credit, insurance, and pension to unbanked population.",
+    "eligibility": "Any Indian citizen above 10 years of age who does not have a bank account. No minimum balance required. Special focus on rural and semi-urban areas.",
+    "benefits": "Zero balance savings account. Free RuPay debit card with accident insurance of Rs 2 lakh. Overdraft facility up to Rs 10,000 after 6 months of satisfactory operation. Life insurance of Rs 30,000.",
+    "how_to_apply": "Visit any bank branch or Bank Mitra (Business Correspondent) with Aadhaar and one passport size photo. Account can be opened with Aadhaar alone.",
+    "tags": ["bank account", "banking", "financial inclusion", "zero balance", "debit card", "insurance"]
+  },
+  {
+    "id": "atal-pension",
+    "name": "Atal Pension Yojana (APY)",
+    "category": "Pension & Retirement",
+    "description": "Guaranteed pension scheme for workers in unorganised sector providing monthly pension of Rs 1000 to Rs 5000 after age 60 based on contribution amount and entry age.",
+    "eligibility": "Indian citizens between 18-40 years of age. Must have a savings bank account and Aadhaar. Unorganised sector workers primarily targeted but open to all.",
+    "benefits": "Guaranteed minimum monthly pension of Rs 1000, 2000, 3000, 4000, or 5000 after age 60. Same pension to spouse after subscriber's death. Return of corpus to nominee.",
+    "how_to_apply": "Apply at your bank branch or through net banking. Submit Aadhaar, mobile number, and bank account details. Monthly contribution auto-debited from bank account.",
+    "tags": ["pension", "retirement", "unorganised worker", "old age", "savings", "senior citizen"]
+  },
+  {
+    "id": "pm-suraksha-bima",
+    "name": "PM Suraksha Bima Yojana (PMSBY)",
+    "category": "Insurance",
+    "description": "Low cost accidental insurance scheme offering Rs 2 lakh cover for accidental death and full disability and Rs 1 lakh for partial disability at a premium of just Rs 20 per year.",
+    "eligibility": "Bank account holders aged 18-70 years with Aadhaar linked to bank account. Auto-debit consent required.",
+    "benefits": "Rs 2 lakh for accidental death or permanent total disability. Rs 1 lakh for permanent partial disability. Premium only Rs 20 per year auto-debited from bank account.",
+    "how_to_apply": "Enrol through your bank's net banking, mobile banking, or visit branch. Link Aadhaar to bank account. Premium auto-debited every June.",
+    "tags": ["insurance", "accident", "death", "disability", "low premium", "bank account"]
+  },
+  {
+    "id": "pm-jeevan-jyoti",
+    "name": "PM Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "category": "Insurance",
+    "description": "Life insurance scheme offering Rs 2 lakh life cover for death due to any reason at a premium of Rs 436 per year, making life insurance accessible to poor and low-income groups.",
+    "eligibility": "Bank account holders aged 18-50 years. Must give consent for auto-debit from bank account.",
+    "benefits": "Rs 2 lakh life insurance cover for death due to any cause. Premium Rs 436 per year auto-debited from bank account in June.",
+    "how_to_apply": "Enrol through bank branch, net banking, or mobile banking. Aadhaar must be linked to bank account.",
+    "tags": ["life insurance", "death", "bank account", "low premium", "financial security"]
+  },
+  {
+    "id": "standup-india",
+    "name": "Stand-Up India Scheme",
+    "category": "Business & Entrepreneurship",
+    "description": "Facilitates bank loans between Rs 10 lakh to Rs 1 crore to at least one SC or ST borrower and at least one woman borrower per bank branch for setting up a greenfield enterprise.",
+    "eligibility": "SC/ST and women entrepreneurs above 18 years. For non-individual enterprises, 51% shareholding and controlling stake must be held by SC/ST or woman entrepreneur. Borrower should not be in default to any bank.",
+    "benefits": "Composite loan of Rs 10 lakh to Rs 1 crore covering 75% of project cost. Repayment period up to 7 years. Working capital through overdraft or cash credit.",
+    "how_to_apply": "Apply at standupmitra.in or visit nearest bank branch. Submit business plan, identity and address proof, caste certificate for SC/ST.",
+    "tags": ["SC", "ST", "women", "entrepreneur", "business loan", "startup", "greenfield"]
+  },
+  {
+    "id": "skill-india",
+    "name": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)",
+    "category": "Skill Development",
+    "description": "Flagship skill development scheme to enable youth to take up industry-relevant skill training and get certified. Provides monetary reward for successful training and certification.",
+    "eligibility": "Indian nationals who are school or college dropouts or unemployed youth. No minimum education qualification required for most courses.",
+    "benefits": "Free skill training in courses ranging from 150 hours to 300 hours across sectors like construction, electronics, food processing, health care, IT. Monetary reward and government certificate upon completion. Placement assistance.",
+    "how_to_apply": "Visit pmkvyofficial.org or find nearest training centre at skillindia.gov.in. Register with Aadhaar and choose preferred sector and course.",
+    "tags": ["skill", "training", "youth", "unemployed", "certificate", "job", "dropout", "fresher"]
+  },
+  {
+    "id": "nrega",
+    "name": "MGNREGS (Mahatma Gandhi National Rural Employment Guarantee Scheme)",
+    "category": "Employment",
+    "description": "Provides at least 100 days of guaranteed wage employment per financial year to every rural household whose adult members volunteer to do unskilled manual work.",
+    "eligibility": "Any adult member of a rural household willing to do unskilled manual work. Must register at Gram Panchayat with proof of residence. No income limit.",
+    "benefits": "100 days of guaranteed employment per household per year. Wages paid at state-notified MGNREGS wage rate (varies by state, typically Rs 200-350 per day). Unemployment allowance if work not provided within 15 days.",
+    "how_to_apply": "Apply for Job Card at Gram Panchayat with Aadhaar, photo, and address proof. Once Job Card issued, apply for work at Gram Panchayat as needed.",
+    "tags": ["employment", "rural", "labour", "manual work", "wages", "job card", "village"]
+  },
+  {
+    "id": "pm-fasal-bima",
+    "name": "PM Fasal Bima Yojana (PMFBY)",
+    "category": "Agriculture",
+    "description": "Crop insurance scheme providing financial support to farmers suffering crop loss or damage due to unforeseen events like natural calamities, pests, and diseases.",
+    "eligibility": "All farmers including sharecroppers and tenant farmers growing notified crops in notified areas. Compulsory for loanee farmers, voluntary for non-loanee farmers.",
+    "benefits": "Maximum premium of 2% for kharif crops, 1.5% for rabi crops, and 5% for commercial or horticultural crops. Full insured sum paid for total crop loss.",
+    "how_to_apply": "Apply through nearest bank, CSC, or directly on pmfby.gov.in before sowing. Submit land records, bank account, and Aadhaar.",
+    "tags": ["farmer", "crop", "insurance", "agriculture", "natural calamity", "flood", "drought"]
+  },
+  {
+    "id": "beti-bachao",
+    "name": "Beti Bachao Beti Padhao (BBBP)",
+    "category": "Girl Child & Women",
+    "description": "Addresses declining child sex ratio and empowers girls through education, awareness campaigns, and welfare schemes particularly in districts with low sex ratio.",
+    "eligibility": "Girl children and their families. Special focus on districts with low sex ratio. Linked with Sukanya Samriddhi Yojana for financial benefits.",
+    "benefits": "Awareness campaigns against female foeticide. Scholarships and incentives for girl child education. Linked financial benefits through Sukanya Samriddhi Yojana.",
+    "how_to_apply": "Automatic coverage through district administration. Open Sukanya Samriddhi Account for financial benefits. Contact Anganwadi or block office for information.",
+    "tags": ["girl child", "education", "women empowerment", "daughter", "sex ratio", "awareness"]
+  },
+  {
+    "id": "startup-india",
+    "name": "Startup India Scheme",
+    "category": "Business & Entrepreneurship",
+    "description": "Government initiative to build a strong ecosystem for nurturing innovation and startups in India, providing tax exemptions, easier compliance, and funding support.",
+    "eligibility": "Entity incorporated or registered in India not more than 10 years old. Annual turnover not exceeded Rs 100 crore in any financial year. Working towards innovation, development, or improvement of products or services.",
+    "benefits": "3-year income tax exemption. Capital gains tax exemption. Self-certification compliance for 9 labour and 3 environment laws. Rs 10,000 crore Fund of Funds. Fast track patent application at 80% fee rebate.",
+    "how_to_apply": "Register at startupindia.gov.in. Submit incorporation certificate, description of innovative nature of business, and website or pitch deck. Recognition given within 2 working days.",
+    "tags": ["startup", "entrepreneur", "innovation", "tax exemption", "funding", "technology", "business"]
+  },
+  {
+    "id": "deen-dayal-upadhyaya",
+    "name": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY)",
+    "category": "Skill Development",
+    "description": "Skill and placement program for rural youth from poor families. Aims to diversify income of rural poor families by adding salaried employment opportunities.",
+    "eligibility": "Rural youth between 15-35 years from poor families (SECC 2011 data). Age limit relaxed to 45 years for SC/ST, women, and persons with disabilities.",
+    "benefits": "Free residential skill training for 3 to 12 months across 200+ job roles. Placement in formal sector with minimum wage. Post-placement support for 3 months.",
+    "how_to_apply": "Contact nearest DDU-GKY Project Implementing Agency or visit ddugky.gov.in. Apply through Gram Panchayat or Block office.",
+    "tags": ["skill", "rural", "youth", "employment", "placement", "poor", "training"]
+  },
+  {
+    "id": "national-apprenticeship",
+    "name": "National Apprenticeship Promotion Scheme (NAPS)",
+    "category": "Skill Development",
+    "description": "Promotes apprenticeship training by providing financial support to establishments engaging apprentices and sharing training costs with employers.",
+    "eligibility": "Passed Class 5 or above. Age 14 years and above. For Graduate and Technician Apprentices: ITI/Diploma/Degree holders. Applied through apprenticeship portal.",
+    "benefits": "Stipend shared between government and employer. Government pays 25% of stipend up to Rs 1500 per month. Employers reimburse basic training cost up to Rs 7500 per apprentice. National Apprenticeship Certificate upon completion.",
+    "how_to_apply": "Register on apprenticeshipindia.gov.in. Search for establishments offering apprenticeship in your trade. Apply directly to establishments.",
+    "tags": ["apprenticeship", "training", "stipend", "ITI", "diploma", "youth", "skill", "fresher"]
+  },
+  {
+    "id": "pm-rozgar-protsahan",
+    "name": "PM Rozgar Protsahan Yojana (PMRPY)",
+    "category": "Employment",
+    "description": "Government pays full employer's contribution of 12% towards EPFO for all new employees earning up to Rs 15,000 per month for first 3 years. Incentivizes employers to generate new employment.",
+    "eligibility": "New employees (those who were not registered with EPFO earlier and earning up to Rs 15,000 per month) joining EPFO registered establishments.",
+    "benefits": "Full EPF and EPS contribution (12%) paid by government for 3 years for new employees. New employees get PF benefits from day one. Employers encouraged to create new formal jobs.",
+    "how_to_apply": "Employers register at pmrpy.gov.in. New employees get covered automatically when employer registers and files returns for new employee's UAN.",
+    "tags": ["employment", "EPF", "provident fund", "new job", "fresher", "formal employment", "salary"]
+  },
+  {
+    "id": "pmegp",
+    "name": "PM Employment Generation Programme (PMEGP)",
+    "category": "Business & Entrepreneurship",
+    "description": "Credit-linked subsidy programme to generate employment opportunities through establishment of micro enterprises in rural and urban areas.",
+    "eligibility": "Any individual above 18 years. For projects above Rs 10 lakh in manufacturing and Rs 5 lakh in service sector, minimum Class 8 pass. Self Help Groups, cooperative societies, charitable trusts also eligible.",
+    "benefits": "Subsidy of 15-35% on project cost. Maximum project cost Rs 50 lakh for manufacturing, Rs 20 lakh for service. Bank loans up to 90% of project cost. Urban: 15% (general) and 25% (special category). Rural: 25% (general) and 35% (special).",
+    "how_to_apply": "Apply online at kviconline.gov.in/pmegpeportal. Submit project report, identity proof, address proof, and educational certificate.",
+    "tags": ["self employment", "loan", "subsidy", "micro enterprise", "business", "rural", "urban", "entrepreneur"]
+  },
+  {
+    "id": "soil-health-card",
+    "name": "Soil Health Card Scheme",
+    "category": "Agriculture",
+    "description": "Provides each farmer a soil health card with information on nutrient status of soil with advice on appropriate dosage of nutrients to improve soil health and its fertility.",
+    "eligibility": "All farmers in India. Soil testing done free of cost by government officials who collect soil samples from farm.",
+    "benefits": "Free soil testing every 2 years. Soil Health Card with details on 12 parameters including N, P, K, pH, micronutrients. Fertilizer recommendations to reduce input costs and increase productivity.",
+    "how_to_apply": "Contact local Agriculture Department or Krishi Vigyan Kendra. Apply at soilhealth.dac.gov.in. Soil samples collected from farm by government officials.",
+    "tags": ["farmer", "agriculture", "soil", "fertilizer", "crop yield", "free testing"]
+  }
+]
