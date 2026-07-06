@@ -1,14 +1,28 @@
 import json
 import os
 import chromadb
-from chromadb.utils import embedding_functions
+import google.generativeai as genai
 from dotenv import load_dotenv
 
 load_dotenv()
 
+genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+
 SCHEMES_FILE = "schemes.json"
 CHROMA_DIR = "./chroma_db"
 COLLECTION_NAME = "schemes"
+
+
+class GeminiEmbeddingFunction:
+    def __call__(self, input):
+        embeddings = []
+        for text in input:
+            result = genai.embed_content(
+                model="models/text-embedding-004",
+                content=text,
+            )
+            embeddings.append(result["embedding"])
+        return embeddings
 
 
 def build_text(scheme):
@@ -28,10 +42,7 @@ def main():
         schemes = json.load(f)
     print(f"Loaded {len(schemes)} schemes.")
 
-    embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name="all-MiniLM-L6-v2"
-    )
-
+    embedding_fn = GeminiEmbeddingFunction()
     client = chromadb.PersistentClient(path=CHROMA_DIR)
 
     try:
@@ -61,7 +72,7 @@ def main():
             "id": scheme["id"],
         })
 
-    print("Generating embeddings and storing in ChromaDB...")
+    print("Generating embeddings with Gemini...")
     collection.add(ids=ids, documents=documents, metadatas=metadatas)
     print(f"Done. {len(ids)} schemes stored in ChromaDB at {CHROMA_DIR}")
 
