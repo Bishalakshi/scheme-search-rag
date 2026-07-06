@@ -18,7 +18,7 @@ class GeminiEmbeddingFunction:
         embeddings = []
         for text in input:
             result = genai.embed_content(
-                model="models/text-embedding-004",
+                model="models/embedding-001",
                 content=text,
             )
             embeddings.append(result["embedding"])
