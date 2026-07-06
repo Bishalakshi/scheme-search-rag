@@ -1,60 +1,54 @@
 import json
 import os
-import chromadb
 import google.generativeai as genai
 from dotenv import load_dotenv
 
 load_dotenv()
-
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 model = genai.GenerativeModel("gemini-1.5-flash")
 
-CHROMA_DIR = "./chroma_db"
-COLLECTION_NAME = "schemes"
-TOP_K = 4
+with open("schemes.json", "r", encoding="utf-8") as f:
+    SCHEMES = json.load(f)
 
 
-class GeminiEmbeddingFunction:
-    def __call__(self, input):
-        embeddings = []
-        for text in input:
-            result = genai.embed_content(
-                model="models/embedding-001",
-                content=text,
-            )
-            embeddings.append(result["embedding"])
-        return embeddings
+def keyword_search(query: str, top_k: int = 4) -> list:
+    query_words = set(query.lower().split())
+    scores = []
+    for scheme in SCHEMES:
+        text = (
+            scheme["name"] + " " +
+            scheme["description"] + " " +
+            scheme["eligibility"] + " " +
+            " ".join(scheme["tags"])
+        ).lower()
+        score = sum(1 for word in query_words if word in text)
+        scores.append((score, scheme))
+    scores.sort(key=lambda x: x[0], reverse=True)
+    return [s for _, s in scores[:top_k] if _ > 0]
 
 
-client = chromadb.PersistentClient(path=CHROMA_DIR)
-collection = client.get_collection(
-    name=COLLECTION_NAME,
-    embedding_function=GeminiEmbeddingFunction(),
-)
+def search_schemes(query: str) -> dict:
+    if not query or len(query.strip()) < 10:
+        return {
+            "answer": "Please describe your situation in more detail.",
+            "schemes": [],
+        }
 
+    relevant = keyword_search(query)
 
-def retrieve(query, top_k=TOP_K):
-    results = collection.query(
-        query_texts=[query],
-        n_results=top_k,
-        include=["documents", "metadatas", "distances"],
-    )
-    retrieved = []
-    for i in range(len(results["ids"][0])):
-        retrieved.append({
-            "id": results["ids"][0][i],
-            "document": results["documents"][0][i],
-            "metadata": results["metadatas"][0][i],
-            "similarity": round(1 - results["distances"][0][i], 3),
-        })
-    return retrieved
+    if not relevant:
+        return {
+            "answer": "I couldn't find schemes matching your situation. Try describing your occupation, income level, state, or specific need.",
+            "schemes": [],
+        }
 
-
-def generate_answer(query, retrieved_schemes):
     context = ""
-    for i, s in enumerate(retrieved_schemes, 1):
-        context += f"\n--- Source {i}: {s['metadata']['name']} ---\n"
-        context += s["document"] + "\n"
+    for i, s in enumerate(relevant, 1):
+        context += f"\n--- Source {i}: {s['name']} ---\n"
+        context += f"Category: {s['category']}\n"
+        context += f"Description: {s['description']}\n"
+        context += f"Eligibility: {s['eligibility']}\n"
+        context += f"Benefits: {s['benefits']}\n"
 
     prompt = f"""You are SchemeSearch, an expert assistant helping Indian citizens find government schemes they are eligible for.
 
@@ -75,39 +69,20 @@ USER'S SITUATION:
 SCHEME CONTEXT:
 {context}
 
-Answer in clear, simple English. Use numbered sections for each relevant scheme."""
+Answer in clear, simple English."""
 
     response = model.generate_content(prompt)
-    return response.text
 
-
-def search_schemes(query):
-    if not query or len(query.strip()) < 10:
-        return {
-            "answer": "Please describe your situation in more detail.",
-            "schemes": [],
-        }
-
-    retrieved = retrieve(query)
-    relevant = [s for s in retrieved if s["similarity"] > 0.3]
-
-    if not relevant:
-        return {
-            "answer": "I couldn't find schemes closely matching your situation. Try describing your occupation, income level, or specific need.",
-            "schemes": [],
-        }
-
-    answer = generate_answer(query, relevant)
     return {
-        "answer": answer,
+        "answer": response.text,
         "schemes": [
             {
                 "id": s["id"],
-                "name": s["metadata"]["name"],
-                "category": s["metadata"]["category"],
-                "benefits": s["metadata"]["benefits"],
-                "how_to_apply": s["metadata"]["how_to_apply"],
-                "similarity": s["similarity"],
+                "name": s["name"],
+                "category": s["category"],
+                "benefits": s["benefits"],
+                "how_to_apply": s["how_to_apply"],
+                "similarity": 0.8,
             }
             for s in relevant
         ],

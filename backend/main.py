@@ -1,7 +1,3 @@
-"""
-FastAPI backend for SchemeSearch RAG app.
-"""
-
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -30,8 +26,7 @@ def root():
 def search(req: SearchRequest):
     if not req.query or len(req.query.strip()) < 5:
         raise HTTPException(status_code=400, detail="Query too short.")
-    result = search_schemes(req.query)
-    return result
+    return search_schemes(req.query)
 
 
 @app.get("/health")
